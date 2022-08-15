@@ -1,0 +1,45 @@
+body {
+    font-family: 'Roboto', Raleway, sans-serif;
+    font-size: 14px;
+    color: 757575;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+}
+
+a:hover {
+    color: #2196f3;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.main-content {
+    width: 1170px;
+    height: 1360px;
+    display: flex;
+    flex-wrap: wrap;
+    /* w poziomie */
+    justify-content: center;
+    /* w pionie */
+    align-items: center;
+}
+
+footer {
+    color: #fff;
+}
