@@ -1,5 +1,13 @@
+:root {
+    --brand-blue: #2196f3;
+    --line-color: #ececec;
+    --brand-black: #212121;
+    --brand-gray: #757575;
+    --white-color: #fff;
+    --footer-color: #2f303a;
+}
 body {
-    font-family: 'Roboto', Raleway, sans-serif;
+    font-family: 'Roboto', 'Raleway', sans-serif;
     font-size: 14px;
     color: 757575;
     font-weight: normal;
@@ -7,39 +15,54 @@ body {
 
 a {
     text-decoration: none;
-    color: #212121;
 }
 
 a:hover {
-    color: #2196f3;
+    color: var(--brand-blue);
 }
 
-a:visited {
-    text-decoration: none;
+.line {
+    border-bottom: var(--line-color) solid 1px;
+    width: 100%;
 }
 
-a:active {
-    text-decoration: none;
-}
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center;
-}
-
-.main-content {
+.main-container {
     width: 1170px;
     height: 1360px;
+}
+
+.filters {
+    width: 572px;
+    height: 54px;
+}
+
+.products-list {
     display: flex;
     flex-wrap: wrap;
-    /* w poziomie */
-    justify-content: center;
-    /* w pionie */
-    align-items: center;
+}
+
+.product {
+    width: 370px;
+    height: 404px;
+    background-color: var(--white-color);
 }
 
 footer {
-    color: #fff;
+    color: var(--white-color);
+    background-color: var(--footer-color);
+}
+
+.footer a {
+    color: var(--white-color);
+    display: block;
+}
+
+.logo {
+    font-size: 26px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.web-color {
+    color: var(--brand-blue);
 }
