@@ -1,3 +1,4 @@
+/* ----------------------------General------------------------------- */
 :root {
     --brand-blue: #2196f3;
     --line-color: #ececec;
@@ -9,51 +10,48 @@
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     font-size: 14px;
-    color: 757575;
+    color: #757575;
     font-weight: normal;
+}
+
+.logo,
+.menu,
+.contact {
+    display: inline-block;
 }
 
 a {
     text-decoration: none;
+    color: var(--brand-black);
 }
 
-a:hover {
+.menu > a:hover,
+.menu > a:focus {
     color: var(--brand-blue);
 }
 
-.line {
-    border-bottom: var(--line-color) solid 1px;
-    width: 100%;
+.active {
+    color: var(--brand-blue);
 }
 
-.main-container {
-    width: 1170px;
-    height: 1360px;
+.contact > a {
+    color: var(--brand-gray);
 }
 
-.filters {
-    width: 572px;
-    height: 54px;
+.contact > a:hover {
+    color: var(--brand-gray);
 }
 
 ul {
     list-style-type: none;
 }
 
-.products-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.product {
-    width: 370px;
-    height: 404px;
-    background-color: var(--white-color);
-}
-
 footer {
     color: var(--white-color);
     background-color: var(--footer-color);
+    line-height: 24px;
+    letter-spacing: 3%;
+    font-size: 14px;
 }
 
 .footer a {
@@ -69,4 +67,109 @@ footer {
 
 .web-color {
     color: var(--brand-blue);
+}
+
+.mail-footer {
+    text-decoration: underline;
+}
+
+.btn {
+    background-color: var(--brand-blue);
+    color: var(--white-color);
+    border: 2px solid var(--brand-blue);
+    border-radius: 4px;
+    padding: 10px 42px;
+}
+
+/* ----------------------------index.html------------------------------- */
+
+.landing {
+    background-color: #2f303a;
+    height: 600px;
+    color: var(--white-color);
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 6%;
+}
+
+.order {
+    letter-spacing: 6%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.strengths-header {
+    letter-spacing: 3%;
+    font-weight: bold;
+    color: var(--brand-black);
+}
+
+.strengths-description {
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: var(--brand-gray);
+}
+
+.header-secondary {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 3%;
+    color: var(--brand-black);
+}
+/* ----------------------------portfolio.html------------------------------- */
+.line {
+    border-bottom: var(--line-color) solid 1px;
+    width: 100%;
+}
+
+.main-container {
+    width: 1170px;
+    height: 1360px;
+}
+
+.filters {
+    width: 572px;
+    height: 54px;
+    margin-top: 94px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 370px;
+    height: 404px;
+    background-color: var(--white-color);
+    margin: 3px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 36px;
+    letter-spacing: 6%;
+}
+
+.category-name {
+    font-size: 16px;
+    color: var(--brand-gray);
+    line-height: 30px;
+    letter-spacing: 3%;
+}
+
+.filter {
+    background-color: #f5f4fa;
+    border: 2px solid #f5f4fa;
+    color: var(--brand-black);
+}
+
+.filter:hover {
+    background-color: var(--brand-blue);
+    color: var(--white-color);
+    cursor: pointer;
 }
