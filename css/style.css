@@ -14,10 +14,30 @@ body {
     font-weight: normal;
 }
 
-.logo,
-.menu,
+/* .logo,
+.menu >li,
 .contact {
     display: inline-block;
+} */
+.header, .menu, .contact{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin: 24px 93px 25px 215px;
+}
+
+.menu > li{
+    margin-right: 46px;
+}
+
+.contact{
+    margin-left: 371px;
+}
+
+.contact > li{
+    margin-right: 50px;
 }
 
 a {
