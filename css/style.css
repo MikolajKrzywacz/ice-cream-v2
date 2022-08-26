@@ -158,7 +158,6 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-basis: 1;
-    border: 1px dashed tomato;
     margin: 0 auto;
     align-items: center;
 }
