@@ -17,84 +17,137 @@
 </head>
 
 <body>
-    <header class="header line">
-        <p><a href="./index.html" class="logo"><span class="web-color">Web</span>Studio</a></p>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Agencja</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#">Kontakt</a></li>
+    <header class="page-header">
+        <div class="container container--row">
+            <a href="./index.html" class="link logo"><span class="logo--color">Web</span>Studio</a>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list__item"><a class="link active" href="index.html">Agencja</a></li>
+                    <li class="list__item"><a class="link hover" href="portfolio.html">Portfolio</a></li>
+                    <li class="list__item"><a class="link hover" href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <ul class="contact contact__header">
+                <li class="item"><a class="link hover" href="mailto:info@devstudio.com">info@example.com</a></li>
+                <li class="item"><a class="link hover" href="tel:+48111111111">+48 111 111 111</a></li>
             </ul>
-        </nav>
-        <div>
-            <ul class="contact">
-                <li><a href="mailto:info@devstudio.com">info@example.com</a></li>
-                <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-            </ul>
-            
         </div>
     </header>
-    <main class="main-content">
-        <section class="landing">
-            <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-            <button class="btn order" type="button">Zamów usługe</button>
+    <main>
+        <section class="section section--background-dark section--height-600">
+            <div class="container">
+                <h1>Efektywne rozwiązania<br> dla waszego biznesu</h1>
+                <button class="btn btn--align-self" type="button">Zamów usługe</button>
+            </div>
         </section>
-        <section class="section">
-            <article class="strengths-article">
-                <h3 class="strengths-header">Lorem ipsum</h3>
-                <p class="strengths-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, vitae!
-                </p>
-            </article>
-
-            <article class="strengths-article">
-                <h3 class="strengths-header">Lorem ipsum</h3>
-                <p class="strengths-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, vitae!
-                </p>
-            </article>
-
-            <article class="strengths-article">
-                <h3 class="strengths-header">Lorem ipsum</h3>
-                <p class="strengths-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit,
-                    vitae!</p>
-            </article>
+        <section class="section section--margin89">
+            <div class="container">
+                <ul class="list">
+                    <li class="list__item">
+                        <h3 class="list__header">Lorem ipsum</h3>
+                        <p class="list__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            illum
+                            officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__header">Lorem ipsum</h3>
+                        <p class="list__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            illum
+                            officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__header">Lorem ipsum</h3>
+                        <p class="list__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            illum
+                            officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                        </p>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__header">Lorem ipsum</h3>
+                        <p class="list__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis
+                            illum
+                            officiis, itaque tenetur incidunt et reiciendis! Blanditiis a temporibus tempore.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="section">
-            <h2 class="header-secondary">Czym się zajmujemy</h2>
-            <ul>
-                <li><img src="./images/img.jpg" height="294" width="370"
-                        alt="photo shows person typing on apple keyboard">
-                </li>
-                <li><img src="./images/img2.jpg" height="294" width="370" alt="Photo shows a person looking at laptop">
-                </li>
-                <li><img src="./images/box3.jpg" height="294" width="370" alt="Photo shows a person looking at tablet">
-                </li>
-            </ul>
+        <section class="section section--margin94">
+            <div class="container">
+                <h2 class="header-secondary">Czym się zajmujemy</h2>
+                <ul class="list">
+                    <li class="list__item list__item--3"><img src="./images/img.jpg" height="294" width="370"
+                            alt="photo shows person typing on apple keyboard">
+                    </li>
+                    <li class="list__item list__item--3"><img src="./images/img2.jpg" height="294" width="370"
+                            alt="Photo shows a person looking at laptop">
+                    </li>
+                    <li class="list__item list__item--3"><img src="./images/box3.jpg" height="294" width="370"
+                            alt="Photo shows a person looking at tablet">
+                    </li>
+                </ul>
         </section>
-
-        <section class="section">
-            <h2 class="header-secondary">Nasz zespół</h2>
-            <ul>
-                <li><img src="./images/stuff.jpg" height="260" width="270" alt="photo of Product Manager - John Doe">
-                </li>
-                <li><img src="./images/stuff2.jpg" height="260" width="270"
-                        alt="photo of Frontend Developer - John Doe"></li>
-                <li><img src="./images/stuff3.jpg" height="260" width="270"
-                        alt="photo of Marketing Specialist - John Doe"></li>
-                <li><img src="./images/stuff4.jpg" height="260" width="270" alt="photo of UI Designer - John Doe">
-                </li>
-            </ul>
-        </section>
-
-    </main>
-    <footer class="footer">
-        <div class="logo-container">
-            <p class="logo"><span class="web-color">Web</span>Studio</p>
         </div>
-        <address class="contact">
-            m. Warszawa, Aleje Jerozolimskie 21
-            <a class="mail-footer" href="mailto:info@example.com">info@example.com</a>
-            <a href="tel:+48111111111">+48111111111</a>
-        </address>
+        <section class="section section--background-light-gray section--margin94">
+            <div class="container">
+                <h2 class="header-secondary">Nasz zespół</h2>
+                <ul class="list">
+                    <li class="list__item">
+                        <figure class="list__card">
+                            <img src="./images/stuff.jpg" height="260" width="270"
+                                alt="photo of Product Manager - John Doe">
+                            <figcaption class="card__description">
+                                <h3 class="img__header">John Doe</h3>
+                                <p class="img__description">Product Designer</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list__item">
+                        <figure class="list__card">
+                            <img src="./images/stuff2.jpg" height="260" width="270"
+                                alt="photo of Frontend Developer - John Doe">
+                            <figcaption class="card__description">
+                                <h3 class="img__header">John Doe</h3>
+                                <p class="img__description">Frontend Developer</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list__item">
+                        <figure class="list__card">
+                            <img src="./images/stuff3.jpg" height="260" width="270"
+                                alt="photo of Marketing Specialist - John Doe">
+                            <figcaption class="card__description">
+                                <h3 class="img__header">John Doe</h3>
+                                <p class="img__description">Marketing</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list__item">
+                        <figure class="list__card">
+
+                            <img src="./images/stuff4.jpg" height="260" width="270"
+                                alt="photo of UI Designer - John Doe">
+                            <figcaption class="card__description">
+                                <h3 class="img__header">John Doe</h3>
+                                <p class="img__description">UI Designer</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer section--background-dark">
+        <div class="container container--align-start">
+            <p class="logo logo__footer"><span class="logo--color">Web</span>Studio</p>
+            <address class="contact contact__footer">
+                m. Warszawa, Aleje Jerozolimskie 21
+                <a class="link link__footer" href="mailto:info@example.com">info@example.com</a>
+                <a class="link link__footer" href="tel:+48111111111">+48 111 111 111</a>
+            </address>
+        </div>
     </footer>
 </body>
 
