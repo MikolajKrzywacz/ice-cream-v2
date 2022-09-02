@@ -180,6 +180,7 @@ img {
 .footer-socials > .list-header {
     text-transform: uppercase;
     color: var(--white-color);
+    margin-top: 0;
 }
 
 .footer-socials > .socials {
