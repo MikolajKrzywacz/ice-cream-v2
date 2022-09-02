@@ -133,6 +133,7 @@ img {
     text-transform: uppercase;
     color: #212121;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .container > .contact-div {
@@ -182,6 +183,10 @@ img {
 
 .footer-socials {
     text-align: center;
+}
+
+.footer-socials > .list-header {
+    color: var(--white-color);
 }
 /* ----------------------------Index.html------------------------------- */
 
