@@ -50,7 +50,7 @@ a {
     color: var(--brand-blue);
 }
 
-.link:hover {
+.link:hover, link:focus {
     color: var(--brand-blue);
     fill: var(--brand-blue);
 }
@@ -319,7 +319,7 @@ h1 {
     margin-top: 16px;
 }
 
-.social:hover {
+.social:hover, .social:focus {
     border-radius: 50%;
     background-color: var(--brand-blue);
     fill: var(--white-color);
@@ -341,11 +341,11 @@ h1 {
     fill: var(--social-icon-color);
 }
 
-.client-card:hover{
+.client-card:hover,.client-card:focus{
     border-color: var(--brand-blue);
 }
 
-.client-card > a > svg:hover{
+.client-card > a > svg:hover,.client-card > a > svg:focus {
     fill: var(--brand-blue);
 }
 
@@ -371,9 +371,10 @@ h1 {
     margin-bottom: 56px;
 }
 
-.filter:hover {
+.filter:hover, .filter:focus {
     background-color: var(--brand-blue);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .products {
@@ -393,7 +394,7 @@ h1 {
     border: '1px dashed green';
 }
 
-.product:hover {
+.product:hover, .product:focus  {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
