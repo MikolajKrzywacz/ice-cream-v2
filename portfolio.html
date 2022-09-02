@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,136 +17,197 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="container container--row">
-            <a href="./index.html" class="link logo"><span class="logo--color">Web</span>Studio</a>
+    <header class="page-header line">
+        <div class="container">
+            <a href="./index.html" class="link logo no-hover">
+                <span class="logo--color">Web</span>Studio</a>
             <nav class="nav">
-                <ul class="list">
-                    <li class="list__item"><a class="link hover" href="index.html">Agencja</a></li>
-                    <li class="list__item"><a class="link active " href="portfolio.html">Portfolio</a></li>
-                    <li class="list__item"><a class="link hover" href="#">Kontakt</a></li>
+                <ul class="list list-header">
+                    <li class="list-item"><a class="link" href="index.html">Agencja</a></li>
+                    <li class="list-item"><a class="link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="list-item"><a class="link" href="#">Kontakt</a></li>
                 </ul>
             </nav>
-            <ul class="contact contact__header">
-                <li class="item"><a class="link hover" href="mailto:info@devstudio.com">info@example.com</a></li>
-                <li class="item"><a class="link hover" href="tel:+48111111111">+48 111 111 111</a></li>
-            </ul>
+            <div class="contact-div">
+                <ul class="contact">
+                    <li class="list-item">
+                        <a class="link" href="mailto:info@devstudio.com">
+                            <div class="link-container">
+                                <svg width="16" height="12">
+                                    <use xlink:href="../images/icons.svg#envelope-logo"></use>
+                                </svg>
+                                info@example.com
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="link" href="tel:+48111111111">
+                            <div class="link-container">
+                                <svg width="10" height="16">
+                                    <use xlink:href="../images/icons.svg#smartphone-logo"></use>
+                                </svg>
+                                +48 111 111 111
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <main class="main-container">
-        <div class="container">
-            <ul>
-                <li> <button type="button" class="filter">Wszyskie</button></li>
-                <li><button type="button" class="filter">Strony</button></li>
-                <li><button type="button" class="filter">Aplikacje</button></li>
-                <li><button type="button" class="filter">Dizajn</button></li>
-                <li><button type="button" class="filter">Marketing</button></li>
-            </ul>
-        </div>
-        <section class="section section--margin-bottom94">
+    <main>
+        <section class="section --margin-100">
             <div class="container">
-                <ul class="products">
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/laptop.jpg" alt="laptop ze widokiem na stronę www" width="370"
-                                height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Technocrack</h3>
-                                <p class="category-name">Strona internetowa</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/curry-poster.jpg"
-                                alt="plakat przedstawiający dwóch graczy. Jeden z zespołu Golden State Warriors, drugi z zespołu New Orlean Pelicans"
-                                width="370" height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Grafika New Orlean vs Golden Star</h3>
-                                <p class="category-name">Dizajn</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/seafood-restaurant.jpg" alt="logo restauracji seafood" width="370"
-                                height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Restauracja Seafood</h3>
-                                <p class="category-name">Aplikacja</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/headphones.jpg" alt="słuchawki nauszne" width="370" height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Projekt Prime</h3>
-                                <p class="category-name">Marketing</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/boxes.jpg" alt="dwa pudełka kartonowe" width="370" height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Projekt Boxes</h3>
-                                <p class="category-name">Aplikacja</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/screen.jpg" alt="monitor wyświetlający stronę internetową" width="370"
-                                height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Inspiration has no Borders</h3>
-                                <p class="category-name">Strona internetowa</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/magazine.jpg" alt="magazyn" width="370" height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Magazyn Limited Edition</h3>
-                                <p class="category-name">Dizajn</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/tag.jpg" alt="zawieszka z nazwą firmy" width="370" height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Projekt LAB</h3>
-                                <p class="category-name">Marketing</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li class="list__product">
-                        <figure class="list__product">
-                            <img src="./images/macbook.jpg"
-                                alt="zdjęcie przedstawia macbooka oraz ręce osoby, która go używa" width="370"
-                                height="294">
-                            <figcaption class="product__description">
-                                <h3 class="product__title">Growing Business</h3>
-                                <p class="category-name">Aplikacja</p>
-                            </figcaption>
-                        </figure>
-                    </li>
-
+                <ul class="list --gap-8">
+                    <li class="list-item"><button type="button" class="filter">Wszyskie</button></li>
+                    <li class="list-item"><button type="button" class="filter">Strony</button></li>
+                    <li class="list-item"><button type="button" class="filter">Aplikacje</button></li>
+                    <li class="list-item"><button type="button" class="filter">Dizajn</button></li>
+                    <li class="list-item"><button type="button" class="filter">Marketing</button></li>
                 </ul>
             </div>
         </section>
+
+        <section class="section">
+            <div class="container">
+                <ul class="list products">
+                    <li class="list-item">
+                        <figure class="product">
+                            <img src="./images/laptop.jpg" alt="laptop ze widokiem na stronę www" height="294px"
+                                width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Technocrack</h3>
+                                <p class="category-name">Strona internetowa</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img src="./images/curry-poster.jpg"
+                                alt="plakat przedstawiający dwóch graczy. Jeden z zespołu Golden State Warriors, drugi z zespołu New Orlean Pelicans"
+                                height="294px" width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Grafika New Orlean vs Golden Star</h3>
+                                <p class="category-name">Dizajn</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img img src="./images/seafood-restaurant.jpg" alt="logo restauracji seafood" height="294px"
+                                width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Restauracja Seafood</h3>
+                                <p class="category-name">Aplikacja</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img src="./images/headphones.jpg" alt="słuchawki nauszne" height="294px" width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Projekt Prime</h3>
+                                <p class="category-name">Marketing</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img src="./images/boxes.jpg" alt="dwa pudełka kartonowe" height="294px" width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Projekt Boxes</h3>
+                                <p class="category-name">Aplikacja</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img src="./images/screen.jpg" alt="monitor wyświetlający stronę internetową" height="294px"
+                                width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Inspiration has no Borders</h3>
+                                <p class="category-name">Strona internetowa</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img img src="./images/magazine.jpg" alt="magazyn" height="294px" width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Magazyn Limited Edition</h3>
+                                <p class="category-name">Dizajn</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img src="./images/tag.jpg" alt="zawieszka z nazwą firmy" height="294px" width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Projekt LAB</h3>
+                                <p class="category-name">Marketing</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="list-item">
+                        <figure class="product">
+                            <img src="./images/macbook.jpg"
+                                alt="zdjęcie przedstawia macbooka oraz ręce osoby, która go używa" height="294px"
+                                width="370">
+                            <figcaption class="product-description">
+                                <h3 class="product-title">Growing Business</h3>
+                                <p class="category-name">Aplikacja</p>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
     </main>
     <footer class="footer section--background-dark">
-        <div class="container container--align-start">
-            <p class="logo logo__footer"><span class="logo--color">Web</span>Studio</p>
-            <address class="contact contact__footer">
-                m. Warszawa, Aleje Jerozolimskie 21
-                <a class="link link__footer" href="mailto:info@example.com">info@example.com</a>
-                <a class="link link__footer" href="tel:+48111111111">+48 111 111 111</a>
-            </address>
+        <div class="container">
+            <div class="contact-container">
+                <p class="logo logo-footer"><span class="logo--color">Web</span>Studio</p>
+                <address class="contact contact-footer">
+                    m. Warszawa, Aleje Jerozolimskie 21
+                    <a class="link link-footer" href="mailto:info@example.com">info@example.com</a>
+                    <a class="link link-footer" href="tel:+48111111111">+48 111 111 111</a>
+                </address>
+            </div>
+            <div class="footer-socials">
+                <h3 class="list-header">Dołącz do nas</h3>
+                <ul class="socials">
+                    <div class="socials-container">
+                        <li class="social">
+                            <svg width="20" height="20">
+                                <a href="#" class="link">
+                                    <use xlink:href="../images/icons.svg#instagram-logo"></use>
+                                </a>
+                            </svg>
+                        </li>
+                        <li class="social">
+                            <svg width="20" height="20">
+                                <a href="#" class="link">
+                                    <use xlink:href="../images/icons.svg#twitter-logo"></use>
+                                </a>
+                            </svg>
+                        </li>
+                        <li class="social">
+                            <svg width="20" height="20">
+                                <a href="#" class="link">
+                                    <use xlink:href="../images/icons.svg#facebook-logo"></use>
+                                </a>
+                            </svg>
+                        </li>
+                        <li class="social">
+                            <svg width="20" height="20">
+                                <a href="#" class="link">
+                                    <use xlink:href="../images/icons.svg#linkin-logo"></use>
+                                </a>
+                            </svg>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
