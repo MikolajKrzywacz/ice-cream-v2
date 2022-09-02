@@ -153,11 +153,14 @@ img {
     margin-left: auto;
 }
 
-.contact {
+.contact-div > .contact{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--brand-gray);
 }
 
-.link-container {
+/* .link-container {
     display: flex;
     align-items: center;
     fill: var(--brand-gray);
@@ -166,7 +169,7 @@ img {
 .link-container > svg {
     margin-right: 10px;
     fill: var(--brand-gray);
-}
+} */
 
 /* ------------------------------------ Footer --------------------------- */
 .footer {
