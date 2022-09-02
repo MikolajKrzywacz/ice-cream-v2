@@ -93,6 +93,16 @@ img {
     align-items: center;
 }
 
+.list-header {
+    gap: 46px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
 .line {
     border-bottom: var(--line-color) solid 1px;
     width: 100%;
@@ -126,14 +136,12 @@ img {
     letter-spacing: 0.02em;
 }
 
-.list-header {
+.nav{
     gap: 46px;
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
     color: #212121;
-    margin-bottom: 10px;
-    margin-top: 30px;
 }
 
 .container > .contact-div {
