@@ -32,7 +32,7 @@ body {
 }
 
 .section {
-    margin-bottom: 94px;
+    padding: 94px 0;
 }
 
 .section > .container {
@@ -312,6 +312,12 @@ h1 {
 }
 
 /* ---------------------------------------- Portfolio.html--------------------------------------- */
+.section-portfolio {
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 94px;
+}
+
 .filter {
     width: 121px;
     height: 38px;
@@ -324,6 +330,7 @@ h1 {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 56px;
 }
 
 .filter:hover {
@@ -371,10 +378,6 @@ h1 {
     font-size: 16px;
     line-height: 30px;
     color: var(--brand-gray);
-}
-
-.--margin-100 {
-    margin-top: 100px;
 }
 
 .--gap-8 {
