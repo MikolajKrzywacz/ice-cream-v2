@@ -177,17 +177,25 @@ img {
     color: #ffffff99;
 }
 
-.footer > .list-header {
-    text-transform: uppercase;
-}
-
-.footer-socials {
-    text-align: center;
-}
-
 .footer-socials > .list-header {
+    text-transform: uppercase;
     color: var(--white-color);
 }
+
+.footer-socials > .socials {
+    gap: 10px;
+}
+
+.socials-container > .social {
+    background: rgba(255, 255, 255, 0.1);
+    /* margin-left: 10px; */
+}
+
+.socials-container > .social:hover {
+    background: var(--brand-blue);
+    fill: var(--white-color);
+}
+
 /* ----------------------------Index.html------------------------------- */
 
 h1 {
@@ -280,6 +288,13 @@ h1 {
     height: 44px;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    background: var(--white-color);
+}
+
+.social:hover {
+    background-color: var(--brand-blue);
+    fill: var(--white-color);
 }
 
 /* ----------------------------------------- Clients -------------------------------- */
