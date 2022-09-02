@@ -7,6 +7,7 @@
     --light-gray-section: #f5f4fa;
     --icon-color: #afb1b8;
     --brand-gray: #757575;
+    --social-icon-color: #afb1b8;
 }
 /* ----------------------------General------------------------------- */
 *,
@@ -126,6 +127,10 @@ img {
     font-size: 16px;
     line-height: 30px;
 }
+
+.social > svg {
+    fill: --social-icon-color;
+}
 /* --------------------------Header------------------------------ */
 
 .page-header {
@@ -136,7 +141,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-.nav{
+.nav {
     gap: 46px;
     font-weight: 700;
     line-height: 16px;
@@ -155,10 +160,12 @@ img {
 .link-container {
     display: flex;
     align-items: center;
+    fill: var(--brand-gray);
 }
 
 .link-container > svg {
     margin-right: 10px;
+    fill: var(--brand-gray);
 }
 
 /* ------------------------------------ Footer --------------------------- */
@@ -191,18 +198,21 @@ img {
     margin-top: 0;
 }
 
-.footer-socials > .socials {
+.socials-footer{
     gap: 10px;
+    display: flex;
 }
 
-.socials-container > .social {
+.socials-footer > .social{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    /* margin-left: 10px; */
-}
-
-.socials-container > .social:hover {
-    background: var(--brand-blue);
     fill: var(--white-color);
+    cursor: pointer;
 }
 
 /* ----------------------------Index.html------------------------------- */
@@ -287,22 +297,27 @@ h1 {
     text-transform: uppercase;
     color: var(--brand-black);
 }
-.socials-container {
-    margin-top: 16px;
+
+.card-description > .socials {
     display: flex;
-}
-.social {
-    display: flex;
-    width: 44px;
-    height: 44px;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: var(--white-color);
     cursor: pointer;
+    gap: 0;
+    fill: var(--social-icon-color);
+}
+
+.card-description > .socials > .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-top: 16px;
 }
 
 .social:hover {
+    border-radius: 50%;
     background-color: var(--brand-blue);
     fill: var(--white-color);
 }
@@ -317,6 +332,18 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.client-card > a > svg{
+    fill: var(--social-icon-color);
+}
+
+.client-card:hover{
+    border-color: var(--brand-blue);
+}
+
+.client-card > a > svg:hover{
+    fill: var(--brand-blue);
 }
 
 /* ---------------------------------------- Portfolio.html--------------------------------------- */
