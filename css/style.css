@@ -8,6 +8,7 @@
     --icon-color: #afb1b8;
     --brand-gray: #757575;
     --social-icon-color: #afb1b8;
+    --backdrop-background: rgba(0, 0, 0, 0.1);
 }
 /* ----------------------------General------------------------------- */
 *,
@@ -48,6 +49,18 @@ a {
 
 .active {
     color: var(--brand-blue);
+}
+
+.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--brand-blue);
+    transform: translateY(29px);
+    border-radius: 2px;
 }
 
 .link:hover,
@@ -181,17 +194,6 @@ img {
     justify-content: center;
     align-items: center;
 }
-
-/* .link-container {
-    display: flex;
-    align-items: center;
-    fill: var(--brand-gray);
-}
-
-.link-container > svg {
-    margin-right: 10px;
-    fill: var(--brand-gray);
-} */
 
 /* ------------------------------------ Footer --------------------------- */
 .footer {
@@ -382,7 +384,8 @@ h1 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--backdrop-background);
+    transition: all 250ms ease-in;
 }
 
 .modal {
@@ -405,12 +408,21 @@ h1 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn:hover {
+    fill: var(--brand-blue);
+    border: 1px solid var(--brand-blue);
 }
 
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: all 250ms ease-in;
 }
 
 /* ---------------------------------------- Portfolio.html--------------------------------------- */
@@ -456,8 +468,34 @@ h1 {
     border: 1px solid #eeeeee;
 }
 
-.product > img {
-    border: '1px dashed green';
+.box{
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover .overlay {
+    transform: translateY(0);
+}
+
+.overlay {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(33, 150, 243, 0.9);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--brand-blue);
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+
+.overlay > p {
+    margin: 49px 45px 24px;
+    color: var(--white-color);
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .product:hover,
