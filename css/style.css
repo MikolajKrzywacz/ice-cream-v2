@@ -516,13 +516,14 @@ h1 {
     /* position: relative; */
     width: 448px;
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: none;
+    outline: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     text-indent: 40px;
 }
 
 .input:focus {
-    border: 1px solid var(--brand-blue);
+    outline: 1px solid var(--brand-blue);
 }
 
 .input-icons:focus {
@@ -549,9 +550,6 @@ h1 {
     padding: 12px 16px;
 }
 
-textarea::placeholder {
-}
-
 .terms-label {
     display: flex;
     position: relative;
@@ -573,6 +571,10 @@ textarea::placeholder {
     width: 16px;
     background-color: var(--white-color);
     cursor: pointer;
+}
+
+.checkbox:checked {
+    fill: var(--brand-blue);
 }
 
 .privacy-policy {
