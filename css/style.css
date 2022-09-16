@@ -509,8 +509,7 @@ h1 {
     color: var(--brand-black);
 }
 
-.label-modal {
-}
+
 
 .input {
     /* position: relative; */
@@ -526,10 +525,6 @@ h1 {
     outline: 1px solid var(--brand-blue);
 }
 
-.input-icons:focus {
-    fill: var(--brand-blue);
-}
-
 .input-icons {
     display: flex;
     align-items: center;
@@ -539,6 +534,12 @@ h1 {
 .input-icons svg {
     position: absolute;
     margin-left: 10px;
+}
+
+.custom-checkbox::before{
+    display: block;
+    content: "";
+
 }
 
 .comment textarea {
@@ -573,7 +574,7 @@ h1 {
     cursor: pointer;
 }
 
-.checkbox:checked {
+label:focus-within svg {
     fill: var(--brand-blue);
 }
 
