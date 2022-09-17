@@ -580,7 +580,8 @@ input:focus + svg {
 .modal-form-policy:checked + .modal-form-policy-text::before {
     border: none;
     background-image: url('../images/icon-check.svg');
-    /* fill: white; */
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: var(--brand-blue);
     outline: 1px solid var(--brand-blue);
 }
