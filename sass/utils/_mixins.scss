@@ -1,0 +1,4 @@
+@mixin section-margin($top: 94px, $bottom: 94px) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}

@@ -1,0 +1,43 @@
+.strengths {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 30px;
+
+    &__box {
+        position: relative;
+        margin-bottom: 30px;
+        // width: 270px;
+        height: 120px;
+        background-color: $background-card;
+
+        &__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__header {
+        margin-bottom: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $secondary-text;
+    }
+
+    &__description {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $primary-text;
+    }
+}

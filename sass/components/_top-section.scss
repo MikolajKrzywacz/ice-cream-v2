@@ -1,0 +1,27 @@
+.top-section {
+    height: 600px;
+    width: 100%;
+    background-color: $section-dark-background;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__overlay {
+        background-color: $top-section__overlay;
+        opacity: 1;
+        height: 100%;
+    }
+
+    &__primary-heading {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 30px;
+    }
+}

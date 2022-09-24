@@ -1,0 +1,5 @@
+.container--column {
+    @extend .container;
+    flex-direction: column;
+    justify-content: center;
+}

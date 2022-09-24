@@ -1,0 +1,27 @@
+@import './utils/colors';
+@import './utils/fonts';
+@import './utils/mixins';
+@import './utils/style-reset';
+@import './components/backdrop';
+@import './components/button-close';
+@import './components/button';
+@import './components/container';
+@import './components/container--header';
+@import './components/container--column';
+@import './components/container--topsection';
+@import './components/header-secondary';
+@import './components/modal';
+@import './components/form-modal';
+@import './components/visually-hidden';
+@import './components/header';
+@import './components/top-section';
+@import './components/strengths-section';
+@import './components/what-we-do-section';
+@import './components/team-section';
+@import './components/clients-section';
+@import './components/footer';
+
+.section{
+@include section-margin();
+}
+
