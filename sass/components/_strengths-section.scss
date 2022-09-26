@@ -1,3 +1,6 @@
+.strengths__container{
+    @include container();
+}
 .strengths {
     display: flex;
     justify-content: space-between;

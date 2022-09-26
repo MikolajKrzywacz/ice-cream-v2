@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.header__container{
+    @include container($align:center);
+}
+
 .nav,
 .contact {
     display: flex;

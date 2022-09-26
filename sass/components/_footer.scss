@@ -12,14 +12,22 @@ ul {
 //     display: flex;
 // }
 
+
+
 .footer {
     padding: 60px 0;
     background-color: $section-dark-background;
     color: $white-color;
 
-    &__container:not(:last-child) {
-        margin-right: 78px;
+    &__container {
+        @include container();
+
+        &__box:not(:last-child) {
+            margin-right: 78px;
+        }
     }
+
+    
 
     &__logo {
         font-family: 'Raleway';

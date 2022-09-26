@@ -1,3 +1,7 @@
+.team__container {
+    @include container($flex-direction: column, $justify: center);
+}
+
 .team,
 .socials {
     list-style: none;

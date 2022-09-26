@@ -1,4 +1,6 @@
-
+.services__container{
+    @include container($flex-direction: column, $justify:center)
+}
 .services {
     list-style: none;
     display: flex;

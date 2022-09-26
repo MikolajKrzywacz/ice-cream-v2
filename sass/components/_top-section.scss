@@ -1,3 +1,7 @@
+.top-section__container {
+    @include container($flex-direction: column, $align: center, $justify:center);
+    height: 100%;
+}
 .top-section {
     height: 600px;
     width: 100%;
@@ -12,6 +16,7 @@
         height: 100%;
     }
 
+    
     &__primary-heading {
         font-family: 'Roboto';
         font-style: normal;
