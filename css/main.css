@@ -145,14 +145,7 @@ img {
   display: block;
 }
 
-.form {
-  margin: 40px;
-  width: auto;
-  height: 500px;
-  display: block;
-}
-
-.form__header {
+.form-header {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
@@ -161,12 +154,7 @@ img {
   color: #000;
 }
 
-.border {
-  margin-top: 4px;
-  margin-bottom: 10px;
-}
-
-.form__input {
+.input {
   width: 448px;
   height: 40px;
   border: none;
@@ -175,26 +163,8 @@ img {
   text-indent: 40px;
 }
 
-.border {
-  position: relative;
-}
-
-.form__icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-textarea {
-  margin-top: 4px;
-}
-
-.form__input:focus,
-.form__input:hover,
-textarea:focus,
-textarea:hover {
+.input:focus,
+textarea:focus {
   outline: 1px solid #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -206,7 +176,7 @@ input:focus + svg {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__form__input-icons {
+.input-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -216,7 +186,7 @@ input:focus + svg {
   margin-bottom: 10px;
 }
 
-.modal__form__input-icons svg {
+.input-icons svg {
   position: absolute;
   margin-left: 10px;
 }
@@ -253,7 +223,7 @@ input:focus + svg {
   content: "";
   width: 16px;
   height: 16px;
-  outline: 2px solid black;
+  outline: 2px solid #000;
   border-radius: 4px;
   cursor: pointer;
   margin-right: 8px;
@@ -266,6 +236,17 @@ input:focus + svg {
   background-position: center;
   background-color: #2196f3;
   outline: 1px solid #2196f3;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 label .link {
