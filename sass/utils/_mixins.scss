@@ -1,0 +1,28 @@
+@mixin section-margin($top: 94px, $bottom: 94px) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+@mixin container($flex-direction: row, $justify:flex-start, $align:stretch) {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin link($color: primary-text,$font-weight: 400, $font-size: 14px, $text-decoration:none,) {
+    color: $color;
+    font-family: $standard-font;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-decoration: $text-decoration;
+    letter-spacing: map-get($letter-spacing,links);
+    cursor: pointer;
+
+    &:hover,
+    &:focus{
+        color:map-get($colors,brand-blue);
+    }
+}

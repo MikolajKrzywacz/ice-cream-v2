@@ -1,0 +1,48 @@
+.strengths{
+    @include section-margin();
+    
+    &__container{
+        @include container();
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 30px;
+}
+
+    &__box {
+        position: relative;
+        margin-bottom: 30px;
+        // min-width: 270px;
+        height: 120px;
+        background-color: map-get($colors, background-card);
+
+        &__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    &__header {
+        font-family: $standard-font;
+        font-style: normal;
+        font-weight: map-get($font-weight, bold);
+        font-size: map-get($font-size, standard );
+        line-height: 16px;
+        letter-spacing: map-get($letter-spacing, standard );
+        text-transform: uppercase;
+        color: map-get($colors, secondary-text);
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-weight: map-get($font-weight, regular);
+        line-height: 24px;
+        font-weight: map-get($colors, primary-text);
+    }
+
+}
