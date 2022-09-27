@@ -1,8 +1,0 @@
-.button--footer {
-    @extend .button;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 12px;
-    fill: map-get($colors,white-color);
-}
