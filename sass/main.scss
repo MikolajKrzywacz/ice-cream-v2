@@ -5,12 +5,13 @@
 @import './components/backdrop';
 @import './components/button-close';
 @import './components/button';
+@import './components/logo';
 @import './components/header-secondary';
 @import './components/modal';
 @import './components/form-modal';
 @import './components/visually-hidden';
 @import './components/header';
-@import './components/top-section';
+@import './components/slider.scss';
 @import './components/strengths-section';
 @import './components/services-section';
 @import './components/team-section';
@@ -18,7 +19,4 @@
 @import './components/footer';
 @import './components/portfolio';
 
-.section{
-@include section-margin();
-}
 

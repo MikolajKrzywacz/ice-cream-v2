@@ -1,4 +1,4 @@
-.section__header-secondary {
+.header-secondary {
     font-family: $standard-font;
     font-style: normal;
     font-weight: map-get($font-weight, bold);
@@ -6,6 +6,6 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: map-get($letter-spacing, standard);
-    color: $secondary-text;
+    color: map-get($colors,secondary-text);
     margin-bottom: 50px;
 }

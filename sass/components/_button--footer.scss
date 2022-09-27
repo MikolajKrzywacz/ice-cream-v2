@@ -4,5 +4,5 @@
     align-items: center;
     justify-content: center;
     margin-left: 12px;
-    fill: $white-color;
+    fill: map-get($colors,white-color);
 }

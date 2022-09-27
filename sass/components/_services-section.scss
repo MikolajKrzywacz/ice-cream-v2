@@ -1,15 +1,20 @@
-.services__container{
-    @include container($flex-direction: column, $justify:center)
-}
 .services {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    @include section-margin();
+    
+    &__container{
+        @include container($flex-direction: column, $justify:center)
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
 
     &__item {
         position: relative;
-
+    
         &__header {
             position: absolute;
             display: flex;
@@ -22,11 +27,12 @@
             line-height: 16px;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            color: $white-color;
+            color: map-get($colors,white-color);
             height: 70px;
             width: 100%;
             background: rgba(47, 48, 58, 0.8);
             bottom: 0;
         }
     }
+
 }
