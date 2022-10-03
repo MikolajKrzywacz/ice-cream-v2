@@ -136,11 +136,11 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .button{
-        margin-left: 100px;
-      }
+  .button {
+    margin-left: 100px;
+  }
 
-    .footer {
+  .footer {
     &__container {
       padding-left: 76px;
       flex-wrap: wrap;
@@ -160,19 +160,30 @@
     }
 
     &__header {
-        text-align: center;
+      text-align: center;
     }
 
     &__form {
-        
-        &__header {
-            text-align: center;
-        }
+      &__header {
+        text-align: center;
+      }
 
-        &__input{
-            margin-bottom: 20px;
-            width: 450px;
-        }
+      &__input {
+        margin-bottom: 20px;
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    &__container {
+        align-items: center;
+        justify-content: center;
+      &__box {
+        margin-bottom: 60px;
+      }
     }
   }
 }
