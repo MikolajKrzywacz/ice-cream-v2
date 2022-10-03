@@ -1,38 +1,43 @@
 .services {
-    @include section-margin();
-    
-    &__container{
-        @include container($flex-direction: column, $justify:center)
-    }
+  @include section-margin();
 
-    &__list{
-        list-style: none;
-        display: flex;
-        gap: 30px;
-        justify-content: space-between;
-    }
+  &__container {
+    @include container($flex-direction: column, $justify: center);
+  }
 
-    &__item {
-        position: relative;
-    
-        &__header {
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: map-get($colors,white-color);
-            height: 70px;
-            width: 100%;
-            background: rgba(47, 48, 58, 0.8);
-            bottom: 0;
-        }
-    }
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+  }
 
+  &__item {
+    position: relative;
+
+    &__header {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: map-get($colors, white-color);
+      height: 70px;
+      width: 100%;
+      background: rgba(47, 48, 58, 0.8);
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
 }
