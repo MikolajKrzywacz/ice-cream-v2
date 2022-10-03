@@ -1,6 +1,11 @@
 @mixin section-margin($top: 94px, $bottom: 94px) {
   margin-top: $top;
   margin-bottom: $bottom;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 @mixin container($flex-direction: row, $justify: flex-start, $align: stretch) {
