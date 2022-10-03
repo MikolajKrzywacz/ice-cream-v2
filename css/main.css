@@ -303,7 +303,9 @@ label .link:focus {
   width: 100%;
 }
 .header__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,6 +320,7 @@ label .link:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid tomato;
 }
 .header__logo {
   color: #000;
@@ -442,7 +445,9 @@ label .link:focus {
   background-size: cover;
 }
 .slider__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,6 +462,7 @@ label .link:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1px solid tomato;
   height: 100%;
 }
 .slider__overlay {
@@ -482,7 +488,9 @@ label .link:focus {
   margin-bottom: 94px;
 }
 .strengths__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,6 +505,7 @@ label .link:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  border: 1px solid tomato;
 }
 .strengths__list {
   display: -webkit-box;
@@ -543,7 +552,9 @@ label .link:focus {
   margin-bottom: 94px;
 }
 .services__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -558,6 +569,7 @@ label .link:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  border: 1px solid tomato;
 }
 .services__list {
   list-style: none;
@@ -602,7 +614,9 @@ label .link:focus {
   margin-bottom: 94px;
 }
 .team__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,6 +631,7 @@ label .link:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  border: 1px solid tomato;
 }
 .team__list {
   list-style: none;
@@ -700,7 +715,9 @@ label .link:focus {
   margin-bottom: 94px;
 }
 .clients__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,6 +732,7 @@ label .link:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  border: 1px solid tomato;
 }
 .clients__list {
   list-style: none;
@@ -762,7 +780,9 @@ label .link:focus {
   color: #fff;
 }
 .footer__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -777,6 +797,7 @@ label .link:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  border: 1px solid tomato;
 }
 .footer__container__box:not(:last-child) {
   margin-right: 78px;
@@ -968,7 +989,9 @@ label .link:focus {
   margin-bottom: 94px;
 }
 .products__filters__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -983,9 +1006,12 @@ label .link:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  border: 1px solid tomato;
 }
 .products__container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1000,6 +1026,7 @@ label .link:focus {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  border: 1px solid tomato;
 }
 .products__list {
   display: -webkit-box;
