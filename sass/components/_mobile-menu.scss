@@ -1,7 +1,10 @@
-@media screen and (min-width:768) {
-    .menu-container {
-        display: none;
-    }
+@media screen and (min-width: 768) {
+  .menu-container {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -22,17 +25,18 @@
     transform: translateX(0);
   }
 
-  .js-close-menu {
-    position: absolute;
-    right: 23px;
-  }
+  //   .js-close-menu {
+  //     position: absolute;
+  //     right: 15px;
+  //     top: 10px;
+  //   }
 
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: map-get($colors, white-color);
-  }
+  //   .menu-container .menu-toggle {
+  //     position: absolute;
+  //     top: 16px;
+  //     right: 16px;
+  //     color: map-get($colors, black-color);
+  //   }
 
   .mobile-menu {
     position: relative;
@@ -41,6 +45,20 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
+    &__button-close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      border: none;
+      background-color: map-get($colors, white-color);
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        fill: map-get($colors, brand-blue);
+      }
+    }
 
     &__list {
       font-family: "Roboto";
@@ -56,6 +74,7 @@
 
     &__item {
       margin-bottom: 36px;
+      width: min-content;
     }
 
     &__link {

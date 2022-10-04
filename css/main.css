@@ -333,7 +333,7 @@ label .link:focus {
   color: #2196f3;
 }
 
-.menu-toggle {
+.js-open-menu {
   display: none;
 }
 
@@ -1204,6 +1204,9 @@ label .link:focus {
 @media screen and (min-width: 768) {
   .menu-container {
     display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1227,16 +1230,6 @@ label .link:focus {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .js-close-menu {
-    position: absolute;
-    right: 23px;
-  }
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
-  }
   .mobile-menu {
     position: relative;
     width: 100vh;
@@ -1251,6 +1244,17 @@ label .link:focus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .mobile-menu__button-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .mobile-menu__button-close:hover, .mobile-menu__button-close:focus {
+    fill: #2196f3;
+  }
   .mobile-menu__list {
     font-family: "Roboto";
     font-style: normal;
@@ -1264,6 +1268,9 @@ label .link:focus {
   }
   .mobile-menu__item {
     margin-bottom: 36px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
   }
   .mobile-menu__link {
     cursor: pointer;
