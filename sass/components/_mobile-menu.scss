@@ -1,0 +1,131 @@
+@media screen and (min-width:768) {
+    .menu-container {
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: map-get($colors, white-color);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .js-close-menu {
+    position: absolute;
+    right: 23px;
+  }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: map-get($colors, white-color);
+  }
+
+  .mobile-menu {
+    position: relative;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__list {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      letter-spacing: 0.02em;
+      color: map-get($colors, secondary-text);
+      margin-top: 48px;
+      margin-left: 40px;
+    }
+
+    &__item {
+      margin-bottom: 36px;
+    }
+
+    &__link {
+      cursor: pointer;
+      text-decoration: none;
+      color: map-get($colors, secondary-text);
+
+      &:hover,
+      &:focus {
+        color: map-get($colors, brand-blue);
+      }
+    }
+  }
+
+  .active-mobile {
+    color: map-get($colors, brand-blue);
+  }
+
+  .mobile-contact {
+    &__list {
+      position: absolute;
+      margin-left: 40px;
+      bottom: 124px;
+    }
+
+    &__item:first-child {
+      margin-bottom: 32px;
+    }
+
+    &__item:first-child a {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.02em;
+      color: map-get($colors, brand-blue);
+    }
+
+    &__item:last-child a {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: map-get($colors, primary-text);
+    }
+  }
+
+  .mobile-socials__list {
+    position: absolute;
+    bottom: 48px;
+    margin-left: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 64px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: map-get($colors, brand-blue);
+  }
+
+  .mobile-socials__item {
+    padding-right: 10px;
+    border-right: 1px solid map-get($colors, brand-blue);
+    cursor: pointer;
+  }
+}
