@@ -133,5 +133,10 @@
     padding-right: 10px;
     border-right: 1px solid map-get($colors, brand-blue);
     cursor: pointer;
+
+    &:hover,
+    &:focus{
+      text-decoration: underline 2px;
+    }
   }
 }
