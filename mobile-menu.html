@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #212121;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: #2196F3;
+        }
+
+        .active {
+            color: #2196F3;
+        }
+
+        .mobile-menu {
+            position: relative;
+            width: 100vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 1px solid tomato;
+        }
+
+        .mobile-menu__list {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 47px;
+            letter-spacing: 0.02em;
+            color: #212121;
+
+            margin-top: 48px;
+            margin-left: 40px;
+        }
+
+        .mobile-menu__item {
+            margin-bottom: 36px;
+        }
+
+        .mobile-contact__list {
+            position: absolute;
+            margin-left: 40px;
+            bottom: 124px;
+            /* gap: 32px; */
+        }
+
+        .mobile-contact__item:first-child {
+            margin-bottom: 32px;
+        }
+
+        .mobile-contact__item:first-child a {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+        }
+
+        .mobile-contact__item:last-child a {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
+
+        .mobile-socials__list {
+            position: absolute;
+            bottom: 48px;
+            left: 40px;
+            display: flex;
+            gap: 10px;
+            margin-top: 64px;
+        }
+
+        .mobile-socials__item {
+            padding-right: 10px;
+            border-right: 1px solid #2196F3;
+            color: #2196F3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mobile-menu">
+        
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item"><a class="mobile-menu__link active" href="index.html">Agencja</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="portfolio.html">Portfolio</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Kontakt</a></li>
+        </ul>
+
+        <ul class="mobile-contact__list">
+            <li class="mobile-contact__item">
+                <a href="tel:+48111111111" class="mobile-contact__link">
+                    +48 111 111 111
+                </a>
+            </li>
+            <li class="mobile-contact__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contact__link">
+                    info@devstudio.com
+                </a>
+            </li>
+        </ul>
+
+        <ul class="mobile-socials__list">
+            <li class="mobile-socials__item">Instagram</li>
+            <li class="mobile-socials__item">Twitter</li>
+            <li class="mobile-socials__item">Facebook</li>
+            <li class="mobile-socials__item">LinkedIn</li>
+        </ul>
+    </div>
+</body>
+
+</html>
