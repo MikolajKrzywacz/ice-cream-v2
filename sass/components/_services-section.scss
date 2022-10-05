@@ -8,12 +8,14 @@
   &__list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
   }
 
   &__item {
     position: relative;
+    flex-basis: calc((100% - 60px) / 3);
 
     &__header {
       position: absolute;

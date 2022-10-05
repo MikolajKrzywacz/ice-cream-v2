@@ -39,3 +39,35 @@
     color: map-get($colors, brand-blue);
   }
 }
+
+// @mixin img-media {
+//   @media screen and (max-width: 1199px) {
+//     .slider {
+//       background-image: url("../images/slider-tablet.jpg");
+//     }
+  
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       .slider {
+//         background-image: url("../images/slider-tablet@2x.jpg");
+//       }
+//     }
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     .slider {
+//       background-image: url("../images/slider-mobile.jpg");
+//     }
+  
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       .slider {
+//         background-image: url("../images/slider-mobile@2x.jpg");
+//       }
+//     }
+//   }
+// }

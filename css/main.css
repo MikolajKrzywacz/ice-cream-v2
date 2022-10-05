@@ -509,7 +509,7 @@ label .link:focus {
   height: 600px;
   width: 100%;
   background-color: #2f303a;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/slider.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -552,12 +552,35 @@ label .link:focus {
   margin-bottom: 30px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .slider {
+    background-image: url("../images/slider@2x.jpg");
+  }
+}
 @media screen and (max-width: 1199px) {
+  .slider {
+    background-image: url("../images/slider-tablet.jpg");
+  }
   .slider__primary-heading {
     font-size: 26px;
     line-height: 42px;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .slider {
+    background-image: url("../images/slider-tablet@2x.jpg");
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider {
+    background-image: url("../images/slider-mobile.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .slider {
+    background-image: url("../images/slider-mobile@2x.jpg");
   }
 }
 .strengths {
@@ -691,6 +714,8 @@ label .link:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -698,6 +723,8 @@ label .link:focus {
 }
 .services__item {
   position: relative;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
 }
 .services__item__header {
   position: absolute;
