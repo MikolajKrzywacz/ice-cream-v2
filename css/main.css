@@ -1153,10 +1153,10 @@ label .link:focus {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 12px;
-  fill: #fff;
   cursor: pointer;
 }
-.footer__form-button__send-icon {
+.footer__form-button-send-icon {
+  fill: #fff;
   margin-left: 24px;
 }
 

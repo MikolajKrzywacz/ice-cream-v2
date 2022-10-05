@@ -114,10 +114,10 @@
       align-items: center;
       justify-content: center;
       margin-left: 12px;
-      fill: map-get($colors, white-color);
       cursor: pointer;
-
-      &__send-icon {
+      
+      &-send-icon {
+        fill: map-get($colors, white-color);
         margin-left: 24px;
       }
     }
