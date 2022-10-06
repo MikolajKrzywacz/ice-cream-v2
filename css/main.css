@@ -1199,9 +1199,6 @@ label .link:focus {
     padding-left: 76px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .footer__container__box {
     display: -webkit-box;
@@ -1211,10 +1208,12 @@ label .link:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-  }
-  .footer__container__box:last-child {
-    margin-top: 60px;
+    -ms-flex-preferred-size: calc((100% - 120px) / 3);
+        flex-basis: calc((100% - 120px) / 3);
   }
   .footer__container__address {
     display: -webkit-box;
@@ -1254,9 +1253,8 @@ label .link:focus {
   }
   .footer__form__input {
     margin-bottom: 20px;
-    width: 100%;
   }
-  .footer__form__button {
+  .footer__form-button {
     margin: 0;
   }
 }
