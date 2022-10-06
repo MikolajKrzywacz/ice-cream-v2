@@ -112,7 +112,7 @@
       justify-content: center;
       margin-left: 12px;
       cursor: pointer;
-      
+
       &-send-icon {
         fill: map-get($colors, white-color);
         margin-left: 24px;
@@ -121,7 +121,24 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form-input-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__form__input {
+    min-width: 358px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
+  .footer__form-input-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
   .footer {
     &__container {
       padding-left: 76px;
@@ -136,7 +153,7 @@
       }
 
       &__box:last-child {
-          margin-top: 60px;
+        margin-top: 60px;
       }
 
       &__address {
@@ -144,7 +161,6 @@
         flex-direction: column;
         align-items: center;
       }
-
     }
 
     &__logo {

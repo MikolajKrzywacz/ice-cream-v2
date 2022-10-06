@@ -1169,7 +1169,32 @@ label .link:focus {
   margin-left: 24px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form-input-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__form__input {
+    min-width: 358px;
+  }
+}
 @media screen and (max-width: 1199px) {
+  .footer__form-input-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .footer__container {
     padding-left: 76px;
     -ms-flex-wrap: wrap;
