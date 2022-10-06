@@ -56,21 +56,18 @@ input:focus + svg {
 }
 
 .policy-container {
-  // display: flex;
-  // justify-content: center;
-  // display: inline-block;
-  // // align-items: center;
-  // // text-align: center;
   margin-bottom: 30px;
   margin-top: 20px;
+  width: 100%;
 }
 
 .modal-form-policy-text {
-  // display: flex;
+  width: 100%;
 }
 
 .modal-form-policy-text::before {
-  display: block;
+  //was display:block but problem was with tes next to custom checkbox
+  display: inline-block;
   content: "";
   width: 16px;
   height: 16px;
@@ -81,12 +78,11 @@ input:focus + svg {
 }
 
 .modal-form-policy:checked + .modal-form-policy-text::before {
-  border: none;
   background-image: url("../images/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: map-get($colors, brand-blue);
-  outline: 1px solid map-get($colors, brand-blue);
+  outline: none;
 }
 
 .visually-hidden {
