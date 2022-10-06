@@ -6,10 +6,7 @@
   &__container {
     @include container();
     flex-wrap: wrap;
-
-    &__box:not(:last-child) {
-      margin-right: 78px;
-    }
+    justify-content: space-between;
 
     &__header {
       margin-bottom: 20px;
@@ -86,7 +83,7 @@
     }
 
     &__input {
-      width: 358px;
+      width: 100%;
       height: 50px;
       border: 1px solid #ffffff4d;
       background-color: map-get($colors, section-dark-background);
@@ -147,7 +144,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
       }
 
     }
