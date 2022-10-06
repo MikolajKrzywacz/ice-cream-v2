@@ -1212,7 +1212,6 @@ label .link:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    border: 1px solid green;
   }
   .footer__container__box:last-child {
     margin-top: 60px;
@@ -1255,7 +1254,7 @@ label .link:focus {
   }
   .footer__form__input {
     margin-bottom: 20px;
-    width: 450px;
+    width: 100%;
   }
   .footer__form__button {
     margin: 0;
@@ -1404,6 +1403,8 @@ label .link:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 10px;
     margin-top: 64px;
     font-family: "Roboto";
