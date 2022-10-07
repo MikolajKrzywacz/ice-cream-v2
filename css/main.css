@@ -293,7 +293,6 @@ label .link:focus {
 @media screen and (max-width: 1199px) {
   .container-form {
     max-width: 528px;
-    margin: 40px 10px;
   }
 }
 .visually-hidden {
@@ -1275,6 +1274,7 @@ label .link:focus {
   .footer__form__input {
     margin-bottom: 20px;
     max-width: 450px;
+    min-width: 300px;
     width: 100%;
   }
   .footer__form-button {
