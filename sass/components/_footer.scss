@@ -141,15 +141,15 @@
   .footer {
     &__container {
       padding-left: 76px;
-      flex-wrap: wrap;
-      
+      justify-content: center;
 
       &__box {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        flex-basis: calc((100% - 120px) / 3);
+        justify-content: center;
+        // flex-basis: calc(100% / 2);
         // border: 1px solid green;
       }
 

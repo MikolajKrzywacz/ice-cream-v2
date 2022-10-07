@@ -32,9 +32,16 @@
 
 @media screen and (max-width: 1199px) {
   .modal {
+    min-width: 320px;
     max-width: 450px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    margin: 0;
   }
 }
