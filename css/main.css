@@ -1230,7 +1230,6 @@ label .link:focus {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     width: 100%;
-    border: 1px solid green;
   }
   .footer__container__box:last-child {
     margin-top: 60px;

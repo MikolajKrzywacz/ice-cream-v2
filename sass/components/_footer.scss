@@ -152,14 +152,12 @@
         // justify-content: center;
         flex-basis: calc(100% / 2);
         width: 100%;
-        border: 1px solid green;
+        // border: 1px solid green;
 
         &:last-child {
           margin-top: 60px;
         }
       }
-
-      
 
       &__address {
         display: flex;
