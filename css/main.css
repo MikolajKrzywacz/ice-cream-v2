@@ -325,7 +325,7 @@ label .link:focus {
   width: 100%;
 }
 .header__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -521,7 +521,7 @@ label .link:focus {
   background-size: cover;
 }
 .slider__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -600,7 +600,7 @@ label .link:focus {
   }
 }
 .strengths__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -695,7 +695,7 @@ label .link:focus {
   }
 }
 .services__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -771,7 +771,7 @@ label .link:focus {
   }
 }
 .team__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -908,7 +908,7 @@ label .link:focus {
   }
 }
 .clients__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -996,7 +996,7 @@ label .link:focus {
   color: #fff;
 }
 .footer__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -1468,7 +1468,7 @@ label .link:focus {
   }
 }
 .products__filters__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -1487,7 +1487,7 @@ label .link:focus {
           align-items: stretch;
 }
 .products__container {
-  min-width: 320px;
+  min-width: 303px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
