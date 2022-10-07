@@ -198,6 +198,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .footer__form-input-container{
+    width: 100%;
+  }
   .footer {
     padding-bottom: 0;
 
