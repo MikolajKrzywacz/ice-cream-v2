@@ -1,41 +1,23 @@
-@mixin section-margin($top: 94px, $bottom: 94px) {
-  margin-top: $top;
-  margin-bottom: $bottom;
-
-  @media screen and (min-width: 400px) and (max-width: 1199px){
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+@mixin is-hidden() {
+  display: none;
+  visibility: 0;
+  pointer-events: none;
 }
 
-@mixin container($flex-direction: row, $justify: flex-start, $align: stretch) {
-  min-width: 303px;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: $flex-direction;
-  justify-content: $justify;
-  align-items: $align;
-  // border: 1px solid tomato;
-}
-
-@mixin link(
-  $color: primary-text,
-  $font-weight: 400,
-  $font-size: 14px,
-  $text-decoration: none
-) {
-  color: $color;
-  font-family: $standard-font;
-  font-weight: $font-weight;
+@mixin button-buy-now($width: 209px, $font-size: 16px) {
+  width: $width;
+  height: 44px;
+  background: var(--white);
+  border-radius: 22px;
+  border: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
   font-size: $font-size;
-  text-decoration: $text-decoration;
-  letter-spacing: map-get($letter-spacing, links);
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    color: map-get($colors, brand-blue);
-  }
+  line-height: 21px;
+  color: var(--main-red);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 16px;
 }
